@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+button {
+  background-color: red;
+}
+
+/* input {
+  display: flex;
+  margin-top: 50px;
+} */
+.login-content {
+  margin-top: 100px;
+}
+.App form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  margin-top: 200px;
+  max-width: 320px;
+  margin: 0 auto 10px;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.App .header {
+  background-color: cornflowerblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.App form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #eeeaea;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.App .login-content button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 18.5%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.container-product {
+  padding: 0 50px;
+}
+
+.container-product h1 {
+  color: #373d63;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.container-product .product-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 50px;
+}
+
+.container-product .product-items {
+  cursor: pointer;
+  max-width: 500px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px #c4c3c361;
+  margin-top: 50px;
+}
+
+.container-product .product-items img {
+  max-width: 250px;
+}
+.container-product .product-items .price {
+  margin: 0 auto;
+  background-color: #598eee;
+  width: 70px;
+  padding: 10px;
+  font-weight: bold;
+  box-shadow: 3px 3px #96909061;
+  border-radius: 5%;
+}
+
+.container-product-detail .product-detail h1{
+  margin-bottom: 100px;
+}
+
+.container-product-detail .product-detail .description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.container-product-detail .product-detail{
+  margin-bottom: 100px;
+}
+
+.container-product-detail .product-detail img {
+ max-width: 500px;
+}
+
+.container-product-detail .product-detail .price {
+  margin: 25px auto;
+  background-color: #598eee;
+  width: 70px;
+  padding: 10px;
+  font-weight: bold;
+  box-shadow: 3px 3px #96909061;
+  border-radius: 5%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
