@@ -5,26 +5,26 @@ import {
 
 function ProductDetail() {
     let { id } = useParams();
-    const [list, setList] = useState([]);
+    const [item, setItem] = useState([]);
 
     useEffect(() => {
-        product();
+        productItems();
     }, [])
 
-    const product = async () => {
+    const productItems = async () => {
         const response = await fetch(`https://fakestoreapi.com/products/${id}`)
 
         const jsonData = await response.json();
-        setList(jsonData);
+        setItem(jsonData);
     }
 
     return (
         <div className="container-product-detail">
             <div className="product-detail">
-                <h1>{list.title}</h1>
-                <img src={list.image} alt="" />
-                <p className="description">{list.description}</p>
-                <p className="price">{list.price}$</p>
+                <h1>{item.title}</h1>
+                <img src={item.image} alt="" />
+                <p className="description">{item.description}</p>
+                <p className="price">{item.price}$</p>
             </div>
         </div>
     )

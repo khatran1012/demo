@@ -76,10 +76,15 @@ button {
   padding: 0 50px;
 }
 
-.container-product h1 {
+.container-product h1 , .cart-list h1 {
   color: #373d63;
   font-size: 40px;
   font-family: cursive;
+}
+
+.cart-box {
+  position: fixed;
+  right: 55px;
 }
 
 .container-product .product-list {
@@ -121,7 +126,11 @@ button {
   font-weight: 500;
   font-family: cursive;
 }
-
+.container-product .product-items-container .cart {
+  width: 100%;
+  max-width: 522px;
+  float: left;
+}
 .container-product-detail .product-detail{
   margin-bottom: 100px;
 }
